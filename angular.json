@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "projects/todo-app",
       "sourceRoot": "projects/todo-app/src",
-      "prefix": "app",
+      "prefix": "amp",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -94,7 +94,7 @@
         }
       }
     },
-    "Calculator": {
+    "calculator": {
       "projectType": "application",
       "schematics": {},
       "root": "projects/calculator",
@@ -151,10 +151,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Calculator:build:production"
+              "browserTarget": "calculator:build:production"
             },
             "development": {
-              "browserTarget": "Calculator:build:development"
+              "browserTarget": "calculator:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -162,7 +162,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Calculator:build"
+            "browserTarget": "calculator:build"
           }
         },
         "test": {

@@ -1,0 +1,21 @@
+<style>
+
+  .grid-container {
+    display: grid;
+    width: 240px;
+    height: 320px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid-container button {
+    height: 100%;
+    width: 100%;
+  }
+  
+</style>
+
+<div class="grid-container">
+  <div *ngFor="let button of buttonData">
+    <button>{{ button.value }}</button>
+  </div>  
+</div>
